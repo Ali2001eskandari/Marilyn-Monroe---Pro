@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit=no>
+      <!------------------------------------------------------->
+      <!--- *Custom CSS* --->
+       
+      <link rel="stylesheet" href="style.css" type="text/css">
+      <!-------------------------------------------------->
+       
+      <!-------------------------------------------------------->
+      <!--- *Bootstrap CSS* --->
+       
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/bootstrap-rtl.css">
+      <!------------------------------------------------->
+       
+      <!------------------------------------------------------>
+      <!--- *Favicon* --->
+       
+      <link rel="shortcut icon" href="img/favicon.ico">
+      <!------------------------------------------------->
+       
+      <!------------------------------------------------------>
+      <!--- *Font awesome src* --->
+       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--------------------------------------------------->
+       
+      <!----------------------------------------------------->
+      <!--- *Bootstrap script* --->
+       
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <!--------------------------------------------------->
+       
+      <title>بیوگرافی</title>
+       
+      <!----------------------------------------------------->
+      <!--- *Style of  full-screen navigation* --->
+       
+      <style>
+         .overlay {
+         height: 0%;
+         width: 100%;
+         position: fixed;
+         z-index: 1;
+         top: 0;
+         left: 0;
+         background-color: rgb(0,0,0);
+         background-color: rgba(0,0,0, 0.9);
+         overflow-y: hidden;
+         transition: all .5s ease-in-out;
+         }
+         .overlay-content {
+         position: relative;
+         top: 25%;
+         width: 100%;
+         text-align: center;
+         margin-top: 30px;
+         }
+         .overlay a {
+         padding: 8px;
+         text-decoration: none;
+         font-size: 36px;
+         color: #818181;
+         display: block;
+         transition: all .5s ease-in-out;
+         }
+         .overlay a:hover, .overlay a:focus {
+         color: red;
+         }
+         .overlay .closebtn {
+         position: absolute;
+         top: 20px;
+         right: 45px;
+         font-size: 60px;
+         }
+         @media screen and (max-height: 450px) {
+         .overlay {overflow-y: auto;}
+         .overlay a {font-size: 20px}
+         .overlay .closebtn {
+         font-size: 40px;
+         top: 15px;
+         right: 35px;
+         }
+         }
+      </style>
+      <!------------------------------------------------->
+       
+   </head>
+   <body onload="myFunction()" data-spy="scroll" data-target=".navbar" data-offset="50">
+      <!------------------------------------------------------->
+      <!--- *Navigation* --->
+       
+      <div class="all-element" id="myDiv" style="display: none;">
+         <nav class="navbar fixed-top">
+            <div class="container">
+               <div class="navbar-brand"><a href="#">بیوگرافی</a></div>
+               <div id="myNav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div class="overlay-content">
+                     <a href="#home">خانه</a>
+                     <a href="#bio">زندگینامه</a>
+                     <a href="#blockquote">نقل قول‌ها</a>
+                     <a href="#films">فیلم‌ها</a>
+                  </div>
+               </div>
+               <a class="btn btn-outline" onclick="openNav()"><i class="fa fa-align-center"></i></a>
+            </div>
+         </nav>
+         <!---------------------------------------------->
+          
+         <div class="masthead">
+            <div class="container">
+               <!---------------------------------------------->
+               <!-- *Home section* --->
+                
+               <div id="home" class="text-center">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <h1 class="kenburns-top">مرلین مونرو</h1>
+                     </div>
+                     <div class="col-sm-12">
+                        <h3 class="text-muted">مرلین مونرو یکی از بازیگران و چهره‌های مطرح سینما و جهان به شمار می‌رود که وی به خاطر جذابیتش مورد توجه همگان قرار داشت...</h3>
+                        <a href="#bio"><button class="btn btn-outline slideanim" type="button">با ما همراه باشید</button></a>
+                     </div>
+                  </div>
+               </div>
+               <!----------------------------------------->
+                
+               <!---------------------------------------------->
+               <!--- *Bio section* --->
+                
+               <div id="bio">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="head-txt">"زندگینامه مرلین مونرو"</div>
+                     </div>
+                      
+                     <!--- "First part" --->
+                     <div class="col-md-4 col-sm-12">
+                        <img src="img/ml-3.jpg" alt="مرلین مونرو" class="slideanim">
+                        <div class="txt-header slideanim">
+                           <h3 class="slideanim">دوران کودکی و نوجوانی</h3>
+                        </div>
+                        <div class="txt-cnt slideanim">
+                           <p class="slideanim">مریلین مونرو با نام اصلی «نورما جین مورتنسون» در تاریخ ۱ ژوئن ۱۹۲۶ میلادی در لس آنجلس به دنیا آمد. در ۹ سالگی به یتیم‌خانه سپرده شد و سپس در طول سال‌ها سرپرستی وی به ۱۱ خانواده مختلف سپرده شد. مادرش از بیماری روان‌گسیختگی رنج می‌برد.
+                              بر اساس نوشته‌های کتابی به نام «شور و تضاد» (Passion and Paradox) از لویس بنر، استاد تاریخ مطالعات زنان در دانشگاه کالیفرنیای جنوبی در ژوئیه ۲۰۱۲ در آمریکا که به مناسبت ۵۰ امین سالگرد مرگ این بازیگر منتشر شد، جدایی مریلین از مادرش در هشت سالگی اتفاق افتاد.
+                           </p>
+                        </div>
+                     </div>
+                      
+                     <!--- "Second part" --->
+                     <div class="col-md-4 col-sm-12">
+                        <img src="img/ml-1.jpg" alt="مرلین مونرو" class="slideanim">
+                        <div class="txt-header slideanim">
+                           <h3 class="slideanim">روابط عاشقانه</h3>
+                        </div>
+                        <div class="txt-cnt slideanim">
+                           <p class="slideanim">گریس مکی، فردی که حق حضانت مریلین را برعهده داشت، پیشنهاد ازدواج او با جیم دوگرتی را داد. مرلین ۱۶ ساله بود و جیم تازه از دبیرستان فارغ‌التحصیل و بازیکن فوتبال در دبیرستان بود.
+                              در دوران جنگ و پس از آن ازدواج افراد جوان پس از دبیرستان بسیار رایج بود. آنان در ۱۹۴۲ ازدواج کردند و زمانی که جیم به ارتش برای جنگ فراخوانده شد، مریلین به شغل مدل عکاسی روی آورد. در سال ۱۹۴۶ زمانی که آن‌ها از هم طلاق گرفتند، مونرو تبدیل به مدل عکاسی معروفی شده بود که تصاویرش در همه مجلات کشور خودنمایی می‌کرد.
+                           </p>
+                        </div>
+                     </div>
+                      
+                     <!--- "Third part" --->
+                     <div class="col-md-4 col-sm-12">
+                        <img src="img/ml-2.jpg" alt="مرلین مونرو" class="slideanim">
+                        <div class="txt-header slideanim">
+                           <h3 class="slideanim">زندگی حرفه‌ای</h3>
+                        </div>
+                        <div class="txt-cnt slideanim">
+                           <p class="slideanim">او با جذابیت‌های جنسی و استعداد بالای طنزگویی در سال ۱۹۵۳ در فیلم چگونه می‌توان با یک میلیونر ازدواج کرد درخشید. مریلین مونرو در این فیلم نقش پولا، پوستر رسمی جشنواره فیلم کن ۲۰۱۲ بمناسبت پنجاهمین سال درگذشت مرلین مونرو. دختری نزدیک‌بین را ایفا می‌کند که دائم با در و دیوار برخورد می‌کند. تصویری که مریلین مونرو در این فیلم از خود نشان داد چنان گیرا و فریبنده بود که توانست بر تصویر بتی گریبل، ستاره زن آن زمان و همبازی‌اش در این فیلم سایه بیندازد. مریلین مونرو با صدای خود چندین ترانه نیز خوانده است.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--------------------------------------->
+                
+               <!---------------------------------------------->
+               <!--- *Blockquote section* --->
+                
+               <div id="blockquote">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="head-txt">"سخنان مرلین مونرو"</div>
+                         
+                        <!--- "Slider" --->
+                        <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+                            
+                           <!--- "Slider indicators" --->
+                           <ul class="carousel-indicators">
+                              <li data-slide-to="0" data-target="#myCarousel" class="active" ></li>
+                              <li data-slide-to="1" data-target="#myCarousel"></li>
+                              <li data-slide-to="2" data-target="#myCarousel"></li>
+                              <li data-slide-to="3" data-target="#myCarousel"></li>
+                              <li data-slide-to="4" data-target="#myCarousel"></li>
+                              <li data-slide-to="5" data-target="#myCarousel"></li>
+                              <li data-slide-to="6" data-target="#myCarousel"></li>
+                              <li data-slide-to="7" data-target="#myCarousel"></li>
+                              <li data-slide-to="8" data-target="#myCarousel"></li>
+                              <li data-slide-to="9" data-target="#myCarousel"></li>
+                           </ul>
+                            
+                           <!--- "Slider item" --->
+                           <div class="carousel-inner slideanim">
+                              <div class="carousel-item active">
+                                 <h3>شهرت نمی‌تواند خواسته‌هایت را برآورده کند. ممکن است یک‌کم گرمت کند، اما حرارتش زودگذر است...</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>نقص زیباست. جنون نبوغ است. و اینکه خنده‌دار باشی خیلی بهتر از این است که ملال‌آور باشی.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>من آدم خوبی هستم اما فرشته نیستم. گناه می‌کنم و شیطان نیستم. من فقط یک دختربچۀ کوچک‌ام که در یک دنیای بزرگ برای یافتن کسی که دوستش بدارد تلاش می‌کند.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>من هم احساس دارم. انسانم. و همۀ چیزی که از دنیا می‌خواهم این است که به خاطر خودم و استعدادهایم دوستم داشته باشند.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>همۀ ما ستاره هستیم و انتظار جلب‌توجه و دیده‌شدن داریم.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>تنهایی برای من فرصتی‌ست تا خودم را بازیابم. همۀ تلاشم را می‌کنم تا خودم را پیدا کنم. اما همین هم گاهی برایم کار ساده‌ای نیست.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>اینکه بدبخت و بی‌کس باشی، خیلی بهتر است از اینکه در کنار یک نفر احساس بدبختی کنی.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>به یک دختر کفش مناسب بده و ببین چطور می‌تواند با آن همۀ دنیا را فتح کند.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>وقتی دختربچه بودم هیچ‌کس دربارۀ زیبایی‌ام چیزی بهم نمی‌گفت. الان فکر می‌کنم باید به همۀ دخترکوچولوها از زیبایی‌شان گفت، حتی اگر زیبا نباشند.</h3>
+                              </div>
+                              <div class="carousel-item">
+                                 <h3>خلاقیت با انسانیت شروع می‌شود. وقتی که انسان باشی، حس می‌کنی؛ رنج می‌بری؛ و بیمار و عصبی می‌شوی.</h3>
+                              </div>
+                           </div>
+                            
+                           <!--- "Slider controls" --->
+                           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                           <span>قبلی</span>
+                           <span class="sr-only">Previous</span>
+                           </a>
+                           <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                           <span>بعدی</span>
+                           <span class="sr-only">Next</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--------------------------------------->
+                
+               <!-------------------------------------------->
+               <!--- *Film section* --->
+                
+               <div id="films">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="head-txt">"فیلم‌های مرلین مونرو"</div>
+                     </div>
+                      
+                     <!--- "part: عاشق پیشه" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Love_Happy.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>عاشق‌پیشه</h3>
+                              <h5>عاشق‌پیشه (انگلیسی: Love Happy) یک فیلم کمدی موزیکال به کارگردانی دیوید میلر است که در سال ۱۹۴۹ منتشر شد.</h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: جنگل آسفالت" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/The_Asphalt_Jungle_poster.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>جنگل آسفالت</h3>
+                              <h5>جنگل آسفالت فیلمی سیاه و سفید در گونهٔ فیلم نوآر به کارگردانی جان هیوستون و محصول سال ۱۹۵۰ آمریکا است.
+                              </h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: همه چیز درباره ایو" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/AllAboutEve.jpeg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>همه‌چیز درباره ایو</h3>
+                              <h5>همه چیز دربارهٔ ایو (به انگلیسی: All About Eve) فیلمی داستانی محصول سال ۱۹۵۰ کمپانی آمریکایی فاکس قرن بیستم است.</h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: برخورد در شب" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Clash_by_Night_1952.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>برخورد در شب</h3>
+                              <h5>برخورد در شب (انگلیسی: Clash by Night) یک فیلم درام آمریکایی به کارگردانی فریتس لانگ است که در سال ۱۹۵۲ منتشر شد.</h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: چگونه میتوان با یک میلیونر ازدواج کرد" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Howtomarry1.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>چگونه می‌توان با یک میلیونر ازدواج کرد</h3>
+                              <h5>چگونه می‌توان با یک میلیونر ازدواج کرد (انگلیسی: How to Marry a Millionaire) فیلمی در سبک کمدی رمانتیک و کمدی-درام به کارگردانی ژان نگولسکو است.</h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: نیاگارا" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Niagara_poster.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>نیاگارا</h3>
+                              <h5>نیاگارا (انگلیسی: Niagara) فیلمی به کارگردانی هنری هاتاوی است که در سال ۱۹۵۳ منتشر شد.</h5>
+                           </div>
+                        </div>
+                     </div>
+                     <!--- "part: آقایان موطلایی ها را ترجیح می دهند" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Gentlemen_Prefer_Blondes_(1953)_film_poster.jpg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>آقایان موطلایی‌ها را ترجیح می‌دهند</h3>
+                              <h5>آقایان موطلایی‌ها را ترجیح می‌دهند (انگلیسی: Gentlemen Prefer Blondes) فیلمی در سبک کمدی رمانتیک و موزیکال به کارگردانی هاوارد هاکس است.</h5>
+                           </div>
+                        </div>
+                     </div>
+                      
+                     <!--- "part: خارش هفت ساله" --->
+                     <div class="col-md-3 col-sm-6">
+                        <div class="film-id">
+                           <img src="img/Marilyn_Monroe_The-Seven-Year-Itch-Poster.jpeg.jpeg" alt="فیلم‌های مرلین مونرو" class="responsive image slideanim">
+                           <i class="fa fa-arrow-down"></i>
+                           <div class="txt-cnt1">
+                              <h3>خارش هفت‌ساله</h3>
+                              <h5>خارش هفت‌ساله (به انگلیسی: The Seven Year Itch) فیلمی به کارگردانی بیلی وایلدر کارگردان آمریکایی است که در سال ۱۹۵۵ منتشر شد.</h5>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!------------------------------------->
+                
+               <!------------------------------------------->
+               <!--- *Footer* --->
+                
+               <div class="footer">
+                  <h5 class="text-muted">بیوگرافی ۱۳۹۷</h5>
+                  <div class="social-media">
+                     <a href="#">  <i class="fa fa-github-alt"></i></a> 
+                     <a href="#">  <i class="fa fa-google-plus"></i></a>
+                     <a href="#"> <i class="fa fa-pinterest"></i></a>
+                     <a href="#"> <i class="fa fa-youtube-play"></i></a>
+                     <a href="#"> <i class="fa fa-telegram"></i></a>
+                  </div>
+                   <h6 class="text-muted">طراحی و اجرا توسط <a href="https://www.instagram.com/alieskandari2001"><h3 class="mylogo">[AiE]</h3></a></h6>
+                   <style>
+                       .mylogo {font-size: 20px; font-family: "Segoe UI"; color: rgb(86, 10, 91); text-align: center;}
+                   </style>               
+                </div>
+               <!------------------------------------->
+                
+               <!------------------------------------------->
+               <!--- *End of all sections* --->
+                
+            </div>
+         </div>
+         <!------------------------------------->
+          
+         <!------------------------------------------->
+         <!--- *Back to top button* --->
+          
+         <a href="#" class="scrollToTop">بالا</a>
+      </div>
+      <!--------------------------------------->
+       
+      <!------------------------------------------->
+      <!--- *Loader* --->
+       
+      <div id="loader"></div>
+      <!---------------------------------------->
+       
+       
+      <!-- ************Java Scripts********* --->
+       
+      <!------------------------------------------->
+      <!--- *Full-screen navigation* --->
+       
+      <script>
+         function openNav() {
+             document.getElementById("myNav").style.height = "100%";
+         }
+         
+         function closeNav() {
+             document.getElementById("myNav").style.height = "0%";
+         }
+      </script>
+      <!------------------------------------->
+       
+      <!------------------------------------------>
+      <!-- *Loader* --->
+       
+      <script>
+         var myVar;
+         
+         function myFunction() {
+             myVar = setTimeout(showPage, 2000);
+         }
+         
+         function showPage() {
+           document.getElementById("loader").style.display = "none";
+           document.getElementById("myDiv").style.display = "block";
+         }
+      </script>
+      <!---------------------------------->
+       
+      <!--------------------------------------->
+      <!--- *Item animation* --->
+       
+      <script>
+         $(window).scroll(function() {
+         $(".slideanim").each(function(){
+         var pos = $(this).offset().top;
+         
+         var winTop = $(window).scrollTop();
+         if (pos < winTop + 600) {
+         $(this).addClass("slide");
+         }
+         });
+         });
+      </script>
+      <!---------------------------------->
+       
+      <!--------------------------------------->
+      <!--- *Back to top button* --->
+       
+      <script>
+         $(document).ready(function(){
+         
+         //Check to see if the window is top if not then display button
+         $(window).scroll(function(){
+         if ($(this).scrollTop() > 100) {
+             $('.scrollToTop').fadeIn();
+         } else {
+             $('.scrollToTop').fadeOut();
+         }
+         });
+         
+         //Click event to scroll to top
+         $('.scrollToTop').click(function(){
+         $('html, body').animate({scrollTop : 0},2000);
+         return false;
+         });
+         
+         });
+      </script>
+      <!--------------------------------->
+       
+      <!--------------------------------------->
+      <!--- *Smooth scroll* --->
+       
+      <script>
+         $(document).ready(function(){
+           // Add smooth scrolling to all links
+           $("a").on('click', function(event) {
+         
+             // Make sure this.hash has a value before overriding default behavior
+             if (this.hash !== "") {
+               // Prevent default anchor click behavior
+               event.preventDefault();
+         
+               // Store hash
+               var hash = this.hash;
+         
+               // Using jQuery's animate() method to add smooth page scroll
+               // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+               $('html, body').animate({
+                 scrollTop: $(hash).offset().top
+               }, 1000, function(){
+            
+                 // Add hash (#) to URL when done scrolling (default click behavior)
+                 window.location.hash = hash;
+               });
+             } // End if
+           });
+         });
+      </script>
+      <!------------------------------->
+       
+      <!--- *Jquery lib* --->
+       
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-------------------------------------------------->
+       
+   </body>
+    
+   <!--- ***Bye Bye!*** --->
+    
+</html>
